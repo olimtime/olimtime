@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Olïmtime · Vintage dress watches, Milan</title>
+<meta name="description" content="Vintage dress watches from the 1950s to the 90s, for anyone tired of ultra hyped sports models. Checked, described honestly, viewable in Milan.">
+<link rel="canonical" href="https://olimtime.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Olïmtime · Vintage dress watches">
+<meta property="og:description" content="Life is too short to wear boring watches. Vintage dress watches, viewable in Milan.">
+<meta property="og:url" content="https://olimtime.com/">
+<meta property="og:image" content="https://olimtime.com/img/polerouter.jpg">
+<meta name="theme-color" content="#4E1D3D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%234E1D3D'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='34' fill='%23D46A22'%3E%C3%96%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+/* Layout: a shop window — wordmark, one-line thesis, then large photo cards in two columns, buying terms underneath. */
+:root{
+  --bg:#F5F0F3;
+  --surface:#FFFFFF;
+  --fg:#1F1219;
+  --muted:#6E5A66;
+  --line:#E3D6DE;
+  --plum:#4E1D3D;
+  --orange:#D46A22;
+  --on-plum:#F7E9DF;
+  --sold:#9A8590;
+  --display:"Caprasimo","Cooper Black","Georgia",serif;
+  --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#150C12;--surface:#20141C;--fg:#F3E8EE;--muted:#B39BA8;--line:#3A2733;
+  --plum:#6A2A53;--orange:#EB8A45;--on-plum:#FBEDE3;--sold:#7E6672;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#150C12;--surface:#20141C;--fg:#F3E8EE;--muted:#B39BA8;--line:#3A2733;
+  --plum:#6A2A53;--orange:#EB8A45;--on-plum:#FBEDE3;--sold:#7E6672;color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px 0}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.badge{width:46px;height:46px;border-radius:50%;background:var(--plum);display:grid;place-items:center;
+  font-family:var(--display);color:var(--orange);font-size:15px;letter-spacing:.02em}
+.mark span{font-family:var(--display);font-size:22px;color:var(--fg)}
+.ig{font-family:var(--mono);font-size:13px;text-decoration:none;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:2px}
+.ig:hover{color:var(--fg)}
+
+/* hero */
+.hero{padding-block:56px 40px;display:grid;gap:18px}
+.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(40px,7vw,80px);line-height:.95;margin:0;
+  letter-spacing:-.01em;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p{margin:0;max-width:34em;font-size:clamp(17px,2vw,19px);color:var(--muted);text-wrap:pretty}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.meta b{color:var(--fg);font-weight:500}
+
+/* grid */
+.section-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:18px;margin-bottom:22px}
+.section-h h2{font-family:var(--display);font-weight:400;font-size:28px;margin:0}
+.section-h span{font-family:var(--mono);font-size:12.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 28px}
+@media (max-width:720px){.grid{grid-template-columns:1fr;gap:44px}}
+
+.watch{display:grid;gap:14px;min-width:0}
+.photo{position:relative;aspect-ratio:4/5;max-width:100%;overflow:hidden;border-radius:4px;background:var(--plum)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.watch:hover .photo img{transform:scale(1.03)}
+.price{position:absolute;left:12px;bottom:12px;background:var(--bg);color:var(--fg);font-family:var(--mono);
+  font-weight:500;font-size:15px;padding:6px 10px;border-radius:3px;font-variant-numeric:tabular-nums}
+.nophoto{display:grid;place-items:center;text-align:center;padding:24px;color:var(--on-plum)}
+.nophoto strong{display:block;font-family:var(--display);font-weight:400;font-size:clamp(34px,5vw,48px);line-height:1;color:var(--orange)}
+.nophoto small{display:block;margin-top:12px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+
+.info{display:grid;gap:6px;min-width:0}
+.maker{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange)}
+.info h3{font-family:var(--display);font-weight:400;font-size:28px;line-height:1.05;margin:0;text-wrap:balance}
+.specs{font-family:var(--mono);font-size:13px;color:var(--muted);margin:2px 0 0}
+.line{margin:4px 0 0;max-width:34em}
+.buy{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;
+  font-weight:600;font-size:14.5px;text-decoration:none;border:1.5px solid var(--fg);color:var(--fg);transition:background .2s,color .2s}
+.btn:hover{background:var(--fg);color:var(--bg)}
+.btn.primary{background:var(--plum);border-color:var(--plum);color:var(--on-plum)}
+.btn.primary:hover{background:var(--orange);border-color:var(--orange);color:#1F1219}
+.btn svg{width:14px;height:14px}
+
+/* how */
+.how{margin-top:80px;display:grid;gap:22px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+@media (max-width:720px){.steps{grid-template-columns:1fr;gap:22px}}
+.steps div{min-width:0}
+.steps h4{font-family:var(--body);font-weight:700;font-size:17px;margin:0 0 6px}
+.steps p{margin:0;color:var(--muted)}
+
+.cta{margin-top:72px;background:var(--plum);color:var(--on-plum);border-radius:6px;padding:36px clamp(20px,4vw,44px);
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.cta p{margin:0;font-family:var(--display);font-size:clamp(24px,3.4vw,34px);line-height:1.1;max-width:18em}
+.cta .btn{border-color:var(--on-plum);color:var(--on-plum)}
+.cta .btn:hover{background:var(--orange);border-color:var(--orange);color:#1F1219}
+
+footer{padding-block:40px 48px;font-family:var(--mono);font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+@media (prefers-reduced-motion:reduce){.photo img,.btn{transition:none}.watch:hover .photo img{transform:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="https://www.instagram.com/olimtime/" target="_blank" rel="noopener">
+      <div class="badge" aria-hidden="true">OLÏM</div>
+      <span>Olïmtime</span>
+    </a>
+    <a class="ig" href="https://www.instagram.com/olimtime/" target="_blank" rel="noopener">@olimtime ↗</a>
+  </header>
+
+  <section class="hero">
+    <h1>Life is too short to wear <em>boring</em> watches.</h1>
+    <p>Vintage dress watches from the 1950s to the 90s, for anyone tired of ultra hyped sports models. Every piece is checked, described honestly, and can be seen in person in Milan.</p>
+    <div class="meta"><span><b>4</b> available</span><span>Milan, Italy</span><span>Ships insured</span></div>
+  </section>
+
+  <section aria-labelledby="avail">
+    <div class="section-h"><h2 id="avail">Available now</h2><span>Prices in EUR</span></div>
+    <div class="grid">
+
+      <article class="watch">
+        <div class="photo"><img src="img/carree.jpg" alt="Universal Genève Carrée in 18k gold with black onyx dial and original UG tag" style="object-position:75% 85%" loading="lazy"><span class="price">€4,550</span></div>
+        <div class="info">
+          <span class="maker">Universal Genève · ref. 110820</span>
+          <h3>Carrée, black onyx</h3>
+          <p class="specs">18k gold · 22 × 32 mm · manual wind cal. 1-42</p>
+          <p class="line">A black onyx dial in a square gold case. It still comes with its original UG strap, buckle and tag.</p>
+          <div class="buy">
+            <a class="btn primary" href="https://www.chrono24.it/universalgenve/carree--id49275956.htm" target="_blank" rel="noopener">Buy on Chrono24</a>
+            <a class="btn" href="https://www.ebay.it/itm/920070044594" target="_blank" rel="noopener">Buy on eBay</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="watch">
+        <div class="photo"><img src="img/longines.jpg" alt="Longines ref. 7326 in 18k rose gold with sunburst dial" style="object-position:70% 50%" loading="lazy"><span class="price">€2,750</span></div>
+        <div class="info">
+          <span class="maker">Longines · ref. 7326</span>
+          <h3>Rose gold, sunburst dial</h3>
+          <p class="specs">18k rose gold · 33 mm · manual wind cal. 19.4</p>
+          <p class="line">A thin bezel around a sunburst dial, and nothing else competing for attention. Underrated now.</p>
+          <div class="buy">
+            <a class="btn primary" href="https://www.chrono24.it/longines/classic--id49350351.htm" target="_blank" rel="noopener">Buy on Chrono24</a>
+            <a class="btn" href="https://www.ebay.it/itm/920076578836" target="_blank" rel="noopener">Buy on eBay</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="watch">
+        <div class="photo"><img src="img/polerouter.jpg" alt="Universal Genève Polerouter automatic in 18k rose gold on brown alligator strap" style="object-position:50% 50%" loading="lazy"><span class="price">€3,500</span></div>
+        <div class="info">
+          <span class="maker">Universal Genève · case by Wenger</span>
+          <h3>Polerouter micro-rotor</h3>
+          <p class="specs">18k rose gold · 33 mm · automatic cal. 218-9</p>
+          <p class="line">Gérald Genta drew the Polerouter years before the Royal Oak. Same designer, none of the waitlist.</p>
+          <div class="buy">
+            <a class="btn primary" href="https://www.ebay.it/itm/920076683458" target="_blank" rel="noopener">Buy on eBay</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="watch">
+        <div class="photo"><img src="img/riviera.jpg" alt="Baume &amp; Mercier ref. MV045104 with coin-edge bezel, Roman numerals and silver dial on black strap" loading="lazy"><span class="price">€210</span></div>
+        <div class="info">
+          <span class="maker">Baume &amp; Mercier · ref. MV045104</span>
+          <h3>Coin bezel, silver dial</h3>
+          <p class="specs">1990s · quartz · date</p>
+          <p class="line">Roman numerals cut into a coin-edge bezel around a clean silver dial. Quartz, so you just put it on and go. The easiest way into vintage on this page.</p>
+          <div class="buy">
+            <a class="btn primary" href="https://www.chrono24.it/baumemercier/riviera--id48872929.htm" target="_blank" rel="noopener">Buy on Chrono24</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="how" aria-labelledby="how">
+    <div class="section-h"><h2 id="how">How buying works</h2><span>Three things to know</span></div>
+    <div class="steps">
+      <div><h4>Protected checkout</h4><p>You pay through Chrono24 or eBay, so their buyer protection covers the purchase.</p></div>
+      <div><h4>See it in Milan</h4><p>Want it on your wrist first? Message me on Instagram and we'll set a time.</p></div>
+      <div><h4>Honest condition</h4><p>Every listing names what's original, what's been replaced and any wear. No surprises in the box.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <p>Looking for something specific? Tell me and I'll keep an eye out.</p>
+    <a class="btn" href="https://ig.me/m/olimtime" target="_blank" rel="noopener">Message @olimtime</a>
+  </section>
+
+  <footer><span>Olïmtime · Milan</span><span>Vintage dress watches, 1950s–90s</span></footer>
+</div>
+</body>
+</html>
